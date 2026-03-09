@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Collection — GA Department | F&B Lazuna</title>
+    <meta name="description" content="Central hub for all Apps Script dashboards. Built by GA Department, F&B Lazuna.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- ═══════════════════ HEADER ═══════════════════ -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <div class="header-logo">
+                <span class="logo-icon"><i class="fa-solid fa-file"></i></span>
+                <span class="logo-text">GA <span class="logo-accent">Department</span></span>
+            </div>
+            <nav class="header-nav">
+                <a href="#hero">Home</a>
+                <a href="#dashboards">Dashboards</a>
+                <a href="#about">About</a>
+                <a href="#bantuan">Bantuan</a>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="toggle-icon sun">☀️</span>
+                <span class="toggle-icon moon">🌙</span>
+                <span class="toggle-slider"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ═══════════════════ HERO ═══════════════════ -->
+    <section class="hero grid-bg" id="hero">
+        <div class="parallax-shapes">
+            <div class="shape shape-1" data-speed="0.03"></div>
+            <div class="shape shape-2" data-speed="0.05"></div>
+            <div class="shape shape-3" data-speed="0.02"></div>
+            <div class="shape shape-4" data-speed="0.04"></div>
+            <div class="shape shape-5" data-speed="0.06"></div>
+            <div class="shape shape-6" data-speed="0.015"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title reveal">
+                <span class="title-line">Dashboard</span>
+                <span class="title-line gradient-text">Collection</span>
+            </h1>
+            <p class="hero-subtitle reveal">
+                Akses semua sistem dalam satu tempat.<br>
+                Dikelola oleh <strong>GA Department</strong>, Built by sktamalik_
+            </p>
+            <a href="#dashboards" class="hero-cta reveal">
+                Jelajahi Dashboard
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17l9.2-9.2M17 17V7H7" />
+                </svg>
+            </a>
+        </div>
+        <div class="scroll-indicator reveal">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+            <span>Scroll ke bawah</span>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ DASHBOARDS ═══════════════════ -->
+    <section class="dashboards" id="dashboards">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-tag">Dashboards</span>
+                <h2 class="section-title">Pilih Dashboard</h2>
+                <p class="section-desc">Klik salah satu kartu di bawah untuk mengakses dashboard yang Anda butuhkan.</p>
+            </div>
+            <div class="cards-grid">
+                <!-- Card 1 — Dashboard Maintenance -->
+                <a href="https://maintenancelazuna.netlify.app/" class="card reveal" id="card-maintenance"
+                    target="_blank" rel="noopener noreferrer">
+                    <div class="card-glow"></div>
+                    <div class="card-icon" style="--accent: #3174f1;">
+                        <span class="logo-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                    </div>
+                    <h3 class="card-title">Maintenance</h3>
+                    <p class="card-desc">Monitoring dan pengelolaan data pemeliharaan aset perusahaan secara real-time.
+                    </p>
+                    <div class="card-action">
+                        Buka Dashboard
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Card 2 — App Nota -->
+                <a href="https://notagalazuna.netlify.app/" class="card reveal" id="card-nota" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="card-glow"></div>
+                    <div class="card-icon" style="--accent: #3174f1;">
+                        <span class="logo-icon"><i class="fa-solid fa-file-invoice-dollar"></i></span>
+                    </div>
+                    <h3 class="card-title">App Nota</h3>
+                    <p class="card-desc">Aplikasi pencatatan dan pengelolaan nota transaksi untuk operasional harian.
+                    </p>
+                    <div class="card-action">
+                        Buka Dashboard
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Card 3 — Dashboard Garansi -->
+                <a href="https://garansigalazuna.netlify.app/" class="card reveal" id="card-garansi" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="card-glow"></div>
+                    <div class="card-icon" style="--accent: #3174f1;">
+                        <span class="logo-icon"><i class="fa-solid fa-shield-halved"></i></span>
+                    </div>
+                    <h3 class="card-title">Garansi Aset</h3>
+                    <p class="card-desc">Pelacakan status garansi produk dan pengelolaan klaim garansi secara efisien.
+                    </p>
+                    <div class="card-action">
+                        Buka Dashboard
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Card 4 — Dashboard Barang Rusak -->
+                <a href="https://barangrusakgalazuna.netlify.app/" class="card reveal" id="card-garansi" target="_blank"
+                    rel="noopener noreferrer">
+                    <div class="card-glow"></div>
+                    <div class="card-icon" style="--accent: #3174f1;">
+                        <span class="logo-icon"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                    </div>
+                    <h3 class="card-title">Barang Rusak</h3>
+                    <p class="card-desc">Pencatatan dan pemantauan laporan kerusakan aset untuk penanganan yang cepat
+                        dan terstruktur.
+                    </p>
+                    <div class="card-action">
+                        Buka Dashboard
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Card 5 — Dashboard Garansi -->
+                <a href="#" class="card reveal" id="card-garansi" target="_blank" rel="noopener noreferrer">
+                    <div class="card-glow"></div>
+                    <div class="card-icon" style="--accent: #3174f1;">
+                        <span class="logo-icon"><i class="fa-solid fa-gear"></i></span>
+                    </div>
+                    <h3 class="card-title">In Progress</h3>
+                    <p class="card-desc">Akan segera hadir
+                    </p>
+                    <div class="card-action">
+                        Buka Dashboard
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- Card 6 — Dashboard Garansi -->
+                <a href="#" class="card reveal" id="card-garansi" target="_blank" rel="noopener noreferrer">
+                    <div class="card-glow"></div>
+                    <div class="card-icon" style="--accent: #3174f1;">
+                        <span class="logo-icon"><i class="fa-solid fa-gear"></i></span>
+                    </div>
+                    <h3 class="card-title">In Progress</h3>
+                    <p class="card-desc">Akan segera hadir
+                    </p>
+                    <div class="card-action">
+                        Buka Dashboard
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ ABOUT / INFO ═══════════════════ -->
+    <section class="about grid-bg" id="about">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <span class="section-tag">Tentang Platform</span>
+                    <h2 class="section-title">Dibangun untuk Efisiensi</h2>
+                    <p>Dashboard Collection adalah pusat akses terpadu untuk semua aplikasi dashboard yang dikembangkan
+                        oleh <strong>GA Department</strong>. Platform ini dirancang agar seluruh tim dapat dengan mudah
+                        menemukan dan mengakses tools yang mereka butuhkan.</p>
+                </div>
+                <div class="stats-grid reveal">
+                    <div class="stat-card">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Dashboard Aktif</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Akses Online</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Skalabilitas</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">⚡</div>
+                        <div class="stat-label">Real-time Data</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ BANTUAN / TROUBLESHOOTING ═══════════════════ -->
+    <section class="bantuan" id="bantuan">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-tag">Bantuan</span>
+                <h2 class="section-title">Kendala Mengakses Dashboard?</h2>
+                <p class="section-desc">Jika Anda mengalami kendala saat mengakses dashboard, silakan coba salah satu
+                    solusi berikut.</p>
+            </div>
+            <div class="bantuan-grid">
+                <!-- Tip 1: Gunakan Browser Lain -->
+                <div class="bantuan-card reveal">
+                    <div class="bantuan-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="2" y1="12" x2="22" y2="12" />
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                    </div>
+                    <h3 class="bantuan-card-title">Gunakan Browser Lain</h3>
+                    <p class="bantuan-card-desc">Coba akses dashboard menggunakan browser alternatif seperti
+                        <strong>Mozilla Firefox</strong>, <strong>Microsoft Edge</strong>, atau <strong>Safari</strong>
+                        untuk hasil terbaik.
+                    </p>
+                    <div class="browser-icons">
+                        <div class="browser-badge">
+                            <i class="fa-brands fa-firefox-browser"></i>
+                            <span>Firefox</span>
+                        </div>
+                        <div class="browser-badge">
+                            <i class="fa-brands fa-edge"></i>
+                            <span>Edge</span>
+                        </div>
+                        <div class="browser-badge">
+                            <i class="fa-brands fa-safari"></i>
+                            <span>Safari</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tip 2: Mode Samaran -->
+                <div class="bantuan-card reveal">
+                    <div class="bantuan-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
+                    </div>
+                    <h3 class="bantuan-card-title">Gunakan Mode Samaran</h3>
+                    <p class="bantuan-card-desc">Buka browser Anda dalam <strong>mode Incognito / Private</strong> untuk
+                        menghindari cache dan ekstensi yang mungkin mengganggu akses dashboard.</p>
+                    <div class="shortcut-keys">
+                        <div class="shortcut-item">
+                            <span class="shortcut-label">Chrome / Edge</span>
+                            <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd>
+                        </div>
+                        <div class="shortcut-item">
+                            <span class="shortcut-label">Firefox</span>
+                            <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tip 3: Bersihkan Cache -->
+                <div class="bantuan-card reveal">
+                    <div class="bantuan-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="23 4 23 10 17 10" />
+                            <polyline points="1 20 1 14 7 14" />
+                            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15" />
+                        </svg>
+                    </div>
+                    <h3 class="bantuan-card-title">Bersihkan Cache Browser</h3>
+                    <p class="bantuan-card-desc">Hapus cache dan cookies browser Anda, lalu muat ulang halaman
+                        dashboard. Ini sering menyelesaikan masalah tampilan dan akses.</p>
+                    <div class="shortcut-keys">
+                        <div class="shortcut-item">
+                            <span class="shortcut-label">Hard Reload</span>
+                            <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Info Note -->
+            <div class="bantuan-note reveal">
+                <div class="note-icon">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+                <p>Dashboard dioptimalkan untuk browser yang memilki maksimal satu akun didalamnya. Jika masalah masih
+                    berlanjut, hubungi
+                    <strong>GA Department</strong> untuk bantuan lebih lanjut.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════ FOOTER ═══════════════════ -->
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon"><i class="fa-solid fa-file"></i></span>
+                    <span class="logo-text">GA <span class="logo-accent">Department</span></span>
+                </div>
+                <p class="footer-credit">Dibuat oleh <strong>GA Department</strong> — PT INTI LAZUNA GROUP</p>
+                <p class="footer-year">© 2026 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
